@@ -23,7 +23,7 @@ public class ParticipantsForm extends JFrame {
         statusArea.setEditable(false);  // make text-area's non-editable
         listArea.setEditable(false);
         txtName.setText("Enter name:");  // set initial textField content
-        // focus listener to automatically clear (and reset) textField when user wants to enter name
+        // focus listener to automatically clear textField when user wants to enter name
         txtName.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(FocusEvent e) { txtName.setText("");}
