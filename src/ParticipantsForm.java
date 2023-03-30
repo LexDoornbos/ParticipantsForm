@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.io.*;
@@ -20,6 +21,8 @@ public class ParticipantsForm extends JFrame {
         setBounds(600, 200, 600, 600);  // set position and size of window
         setVisible(true);
         setContentPane(panelMain);
+        statusArea.setMargin(new Insets(10, 10, 10,10));  // add a little padding on the textAreas
+        listArea.setMargin(new Insets(10, 10, 10,10));
         statusArea.setEditable(false);  // make text-area's non-editable
         listArea.setEditable(false);
         txtName.setText("Enter name:");  // set initial textField content
