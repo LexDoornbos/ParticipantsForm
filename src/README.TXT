@@ -9,4 +9,4 @@
 2023-03-29:  Added coding comments.
              Added time slot taken check.
              Added text file storage of the participants list. So that the list survives on close window and re-opens in a new window.
-             Not quite satisfied with the cleanliness of the code, but it al seems to work nicely
+             Not quite satisfied with the cleanliness of the code, but it all seems to work nicely
