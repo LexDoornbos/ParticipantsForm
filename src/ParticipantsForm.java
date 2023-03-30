@@ -29,7 +29,7 @@ public class ParticipantsForm extends JFrame {
             public void focusGained(FocusEvent e) { txtName.setText("");}
 
             @Override
-            public void focusLost(FocusEvent e) { txtName.setText("Enter name:");}
+            public void focusLost(FocusEvent e) {}
         });
         // set up the hour and minute spinner with proper constraints
         SpinnerNumberModel hourModel = new SpinnerNumberModel(12, 0 ,23, 1);
@@ -40,7 +40,7 @@ public class ParticipantsForm extends JFrame {
 
         // initialize an empty ArrayList for storing Participants
         ArrayList<String> participantsList = new ArrayList<>();
-        // Arraylist for checking available time slots
+        // Arraylist for checking if a chosen time slot has already been taken
         ArrayList<String> reservedTimeSlots = new ArrayList<>();
 
         // read the contents of the text file and populate the text area.. (Thank you ChatGPT)
@@ -100,7 +100,7 @@ public class ParticipantsForm extends JFrame {
             minuteModel.setValue(30);
         });
     }
-
+//
     public class Participant {
         private String name;
         private String timeSlot;
