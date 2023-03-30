@@ -100,7 +100,8 @@ public class ParticipantsForm extends JFrame {
             minuteModel.setValue(30);
         });
     }
-//
+
+    // participant class to populate participantsList
     public class Participant {
         private String name;
         private String timeSlot;
