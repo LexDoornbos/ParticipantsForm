@@ -1,3 +1,6 @@
+# ParticipantsForm
+Mini-project for CodeGorilla Java Bootcamp
+
 2023-03-22:  Received instructions for mini-project.
 2023-03-23:  Watched some of the instructional videos for the project.
 2023-03-24:  Made Swing GUI interface and getting started in Github.
@@ -10,3 +13,8 @@
              Added time slot taken check.
              Added text file storage of the participants list. So that the list survives on close window and re-opens in a new window.
              Not quite satisfied with the cleanliness of the code, but it all seems to work nicely
+2023-03-29  Final touches.
+
+
+Program works as intended. Bit messy code, but for now -and with my current level of knowledge in Java- I will consider it done. 
+Needs a revisit in the future when I've learned more. 
