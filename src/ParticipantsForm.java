@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -21,6 +23,14 @@ public class ParticipantsForm extends JFrame {
         statusArea.setEditable(false);  // make text-area's non-editable
         listArea.setEditable(false);
         txtName.setText("Enter name:");  // set initial textField content
+        // focus listener to automatically clear (and reset) textField when user wants to enter name
+        txtName.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) { txtName.setText("");}
+
+            @Override
+            public void focusLost(FocusEvent e) { txtName.setText("Enter name:");}
+        });
         // set up the hour and minute spinner with proper constraints
         SpinnerNumberModel hourModel = new SpinnerNumberModel(12, 0 ,23, 1);
         hourSpinner.setModel(hourModel);
